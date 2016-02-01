@@ -16,7 +16,7 @@ Most likely you'll want to share some images with the container so you'll need t
 ```
 docker run -it --rm \
     --device /dev/bus/usb:/dev/bus/usb \
-    --volume `pwd`:/data
+    --volume `pwd`:/data \
     groupsky/heimdall \
     heimdall flash --SYSTEM /data/system.img
 ```
