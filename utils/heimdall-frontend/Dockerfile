@@ -1,4 +1,4 @@
-FROM groupsky/heimdall:1.4.0
+FROM groupsky/heimdall
 
 # persistent / runtime deps
 RUN apt-get update && apt-get install -y sudo libqt4-xml libqtcore4 libqtgui4 --no-install-recommends && rm -r /var/lib/apt/lists/*
